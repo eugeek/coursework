@@ -14,11 +14,11 @@ import {
 import { bubbleSort, quickSort, insertionSort } from "../lib/sorts";
 
 export default function Interface() {
-  const [text, setText] = useState("" as string);
-  const [array, setArray] = useState([] as number[]);
-  const [sortedArray, setSortedArray] = useState([] as number[]);
-  const [history, setHistory] = useState([] as number[][]);
-  const [error, setError] = useState("" as string);
+  const [text, setText] = useState<string>("");
+  const [array, setArray] = useState<number[]>([]);
+  const [sortedArray, setSortedArray] = useState<number[]>([]);
+  const [history, setHistory] = useState<number[][]>([]);
+  const [error, setError] = useState<string>("");
 
   const [isCopy, setIsCopy] = useState(false);
   const copyRef = useRef(null);
